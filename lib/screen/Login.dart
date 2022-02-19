@@ -28,7 +28,8 @@ class _LoginState extends State<Login> {
     d.postLogin(request).then((value) {
       if (value.name != null) {
         Navigator.push(context,
-            MaterialPageRoute(builder: (context) => MainTab(pengguna: value)));
+            // MaterialPageRoute(builder: (context) => MainTab(pengguna: value)));
+            MaterialPageRoute(builder: (context) => MainTab(status_screen: true, initialIndex: 3,)));
       } else {
         setState(() {
           label = "Gagal Login, Silahkan coba masuk lagi";

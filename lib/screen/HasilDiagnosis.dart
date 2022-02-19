@@ -85,7 +85,17 @@ class _HasilDiagnosisState extends State<HasilDiagnosis> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Hasil diagnosa"),
-        backgroundColor: HexColor('#F05454'),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight, colors: [
+                Colors.red,
+                Colors.blue
+              ]
+              )
+          ),
+        ),
       ),
       body: Container(
         child: SingleChildScrollView(

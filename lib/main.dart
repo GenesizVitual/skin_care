@@ -19,7 +19,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
          primarySwatch: Colors.blue,
       ),
-      home:Login(),
+      // home:MainTab(status_screen: false, initialIndex: 0,),
+      home:LandingPage(),
     );
   }
 }

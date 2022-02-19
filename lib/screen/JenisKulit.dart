@@ -27,6 +27,8 @@ class _JenisKulitState extends State<JenisKulit> {
       container.add(
         Container(
          child: Card(
+           shadowColor: Colors.redAccent,
+           elevation: 5,
             child: ListTile(
               title: Text("${jenis_kulit_model[i].jenis_kulit}"),
               subtitle: Text("${jenis_kulit_model[i].deskripsi} \n\n ${jenis_kulit_model[i].ciri_ciri}"),
@@ -54,6 +56,8 @@ class _JenisKulitState extends State<JenisKulit> {
           children: [
             Container(
               child: Card(
+                shadowColor: Colors.redAccent,
+                elevation: 5,
                 child: ListTile(
                   title: Text(
                     "Jenis Kulit dan Ciri-cirinya",
