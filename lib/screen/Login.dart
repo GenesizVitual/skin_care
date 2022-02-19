@@ -45,11 +45,6 @@ class _LoginState extends State<Login> {
         key: _formKey,
         child: Container(
           height: double.infinity,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage('assets/img/background.jpg'),
-                fit: BoxFit.cover),
-          ),
           padding: EdgeInsets.all(16.0),
           child: SingleChildScrollView(
             child: Column(

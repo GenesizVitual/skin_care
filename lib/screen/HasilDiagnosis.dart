@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../model/ResponseSkinCare.dart';
 import 'NotFoundSolution.dart';
@@ -101,44 +102,49 @@ class _HasilDiagnosisState extends State<HasilDiagnosis> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Container(
-                    padding: EdgeInsets.all(8.0),
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                          backgroundColor: Color(0xffF18265)),
-                      onPressed: () {
-                        TabHasilDiagnosa("recomended");
-                      },
-                      child: Text(
-                        "Recommeded Skincare",
-                        style: TextStyle(
-                          color: Color(0xffffffff),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.all(8.0),
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                          backgroundColor: Color(0xffF18265)),
-                      onPressed: () {
-                        TabHasilDiagnosa("urecomended");
-                      },
-                      child: Text(
-                        "Unrecommeded Skincare",
-                        style: TextStyle(
-                          color: Color(0xffffffff),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+             Container(
+               child: SingleChildScrollView(
+                 scrollDirection: Axis.horizontal,
+                 child:  Row(
+                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                   crossAxisAlignment: CrossAxisAlignment.center,
+                   children: [
+                     Container(
+                       padding: EdgeInsets.all(8.0),
+                       child: TextButton(
+                         style: TextButton.styleFrom(
+                             backgroundColor: Color(0xffF18265)),
+                         onPressed: () {
+                           TabHasilDiagnosa("recomended");
+                         },
+                         child: Text(
+                           "Recommeded Skincare",
+                           style: TextStyle(
+                             color: Color(0xffffffff),
+                           ),
+                         ),
+                       ),
+                     ),
+                     Container(
+                       padding: EdgeInsets.all(8.0),
+                       child: TextButton(
+                         style: TextButton.styleFrom(
+                             backgroundColor: Color(0xffF18265)),
+                         onPressed: () {
+                           TabHasilDiagnosa("urecomended");
+                         },
+                         child: Text(
+                           "Unrecommeded Skincare",
+                           style: TextStyle(
+                             color: Color(0xffffffff),
+                           ),
+                         ),
+                       ),
+                     ),
+                   ],
+                 ),
+               ),
+             ),
               Container(
                 child: Card(
                   color: HexColor("#4FBDBA"),

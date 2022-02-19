@@ -11,11 +11,14 @@ class Beranda extends StatelessWidget {
           children: [
             Container(
               child: Card(
+                shadowColor: Colors.redAccent,
                 elevation: 5,
                 child: Image.asset("assets/img/banner.jpg"),
               ),
             ),
             Card(
+                shadowColor: Colors.redAccent,
+                elevation: 5,
                 child: Padding(
               padding: EdgeInsets.all(5.0),
               child: ListTile(
